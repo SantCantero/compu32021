@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Publicar</title>
+<link href="estilos.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header id="header_home">
+		<a href="index.html" title="Pomona">
+			<img src="img/marca_02.png" width="241 px" height="74 px" alt="Pomona" id="marca_nav">
+		</a>
+		<nav class="botonera" id="desplegado">
+			<ul>
+				<a href="recolectar_01.html"><li class="section_unfocus">Recolectar</li>
+				</a>
+				<a href="publicar.html"><li class="section_unfocus">Publicar</li>
+				</a>
+				<a href="#popup3"><li class="section_unfocus">Mensajes</li>
+				</a>
+				<li class="barra">
+					<a href="#"><img src="img/lupa-10.png" width="42 px" height="42 px" alt="Búsqueda">
+					</a>
+					<input type="text" name="">
+				</li>
+				<a href="#popup01">
+					<li class="user">Estebangnr</li>
+				</a>
+				<a id="ocultar_nav" href="#">
+					<h5>Cerrar</h5>
+				</a>
+			</ul>	
+		</nav>
+		<a href="#desplegado" class="hamburguesa">
+			<img src="img/hamburguesa.png" width="44px" height="44px" alt="Menú">
+		</a>
+		<article class="barra_02">
+			<input type="text" name="">
+			<a href="#">
+				<img src="img/lupa-10.png" width="42 px" height="42 px" alt="Búsqueda">
+			</a>
+		</article>
+	</header>
+	<main>
+		<section class="publicaciones">
+			<article class="contenedor_02">
+				<h3>NUEVA PUBLICACIÓN</h3>
+				<h4>¡Vamos a crear una nueva publicación!</h4>
+				<img src="img/publicación_paltas.png" width="387.76px" height="354.22px" alt="Publicación" class="publicacion">
+				<img src="img/ícono_galería.png" width="57px" height="57px" alt="Galería" class="icono">
+			</article>
+			<article class="contenedor_03">
+				<form class="formulario_02">
+					<div class="fila_01">
+						<h3>¿Qué tipo de alimentos querés donar?</h3>
+						<div class="categorias_02">
+							<input type="button" class="categoria_02" value="Frutas y Verduras">
+							<input type="button" class="categoria_02" value="No perecederos">
+						</div>
+						<label for="titulo">Título</label>
+						<input type="text" name="titulo" id="titulo" maxlength="30" placeholder="Indica qué querés donar. Ej: Lechuga" required>
+						<label for="cantidad">Cantidad</label>
+						<input type="number" name="cantidad" id="cantidad" min="1" max="100">
+						<label for="descripcion">Descripción</label>
+						<textarea name="descripcion" id="descripcion" maxlength="600" placeholder="Usa # para indicar palabras clave"></textarea>
+					</div>
+					<div class="fila_02">
+						<img src="img/localización_02.png" width="45px" height="45px" alt="Localización">
+						<input type="text" name="localidad" id="localidad" maxlength="30" placeholder="¿Dónde se retira?" required>
+						<div style="width: 100%"><iframe width="100%" height="309" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=517&amp;hl=es&amp;q=Av.%20V%C3%A9lez%20Sarsfield%20y%20Alvarado+(Mi%20nombre%20de%20egocios)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://www.mapsdirections.info/marcar-radio-circulo-mapa/"></a>
+						</div>
+						<div class="boton_principal_02">
+							<a href="#" title="Publicar">
+								<h3>Publicar</h3>
+							</a>
+						</div>
+					</div>
+				</form>
+			</article>
+		</section>
+		<section class="cajademensajes">
+			<article class="aparecer3" id="popup3">
+				<a id="cerrar1" href="#">
+					<img src="img/cerrarchat.png" alt="cerrar mensaje">
+				</a>
+				<div class="aparecer3contenedor">
+					<div class="box_mensajes">
+						<img src="img/perfil2.png" alt="perfil1" height="55px" width="55px">
+						<ul>
+							<li><h4>Karina</h4><img src="img/puntomensaje.png" height="18px" width="18px" alt="puntomensaje"></li>
+							<li>Mensaje de entrada</li>
+						</ul>
+					</div>
+					<div class="box_mensajes">
+						<img src="img/perfil1.png" height="55px" width="55px" alt="perfil2">
+						<ul>
+							<li><h4>Caro</h4><img src="img/puntomensaje.png" height="18px" width="18px" alt="puntomensaje"></li>
+							<li>Hola, los tomates...</li>
+						</ul>
+					</div>
+					<div class="box_mensajes">
+						<img src="img/perfil3.png" height="55px" width="55px" alt="perfil3">
+						<ul>
+							<li><h4>Marina</h4><img src="img/puntomensaje.png" height="18px" width="18px" alt="puntomensaje"></li>
+							<li>Buenas, las verduras...</li>
+						</ul>
+					</div>
+				</div>
+			</article>
+		</section>
+		<section class="popup" id="popup01">
+			<a id="cerrar" href="#"><img src="img/cerrarchat.png" alt="Cerrar chat">
+			</a>
+			<article class="popup_01">
+				<div class="activardiv">
+					<input type="file" id="activarfiles">
+					<label for="activarfiles" class="activarfiles2">
+						<img src="img/perfileditpng_1.png" alt="">
+					</label>
+				</div>
+				<h4>Estebangnr</h4>
+				<h5>Calificaciones de otros usuarios</h5>
+				<img src="img/estrellas.png" height="28.18px" alt="estrellas">
+				<div class="actividad">
+					<h3>Actividad</h3>
+					<ul>
+						<li>
+							<h6>Donado</h6>
+							<p>4</p>
+						</li>
+						<li>
+							<h6>Recogido</h6>
+							<p>7</p>
+						</li>
+					</ul>
+				</div>
+				<div class="insignias">
+					<h3>Insignias</h3>
+					<img src="img/insignias.png" height="41.77px" alt="insignia">
+				</div>
+				<div class="boton_principal">
+					<a href="index.html" title="Cerrar Sesión" >
+						<h5>Cerrar Sesión</h5>
+					</a>
+				</div>
+			</article>
+		</section>
+	</main>
+	<footer>
+		<img src="img/marca_footer.png" width="214 px" height="66 px" alt="Pomona">
+		<div class="legales">
+			<ul>
+				<li class="legales_01"><a href="#">©2021 Pomona</a></li>
+				<li><a href="#">Términos y condiciones</a></li>
+				<li><a href="#">Política de privacidad</a></li>
+				<li><a href="#">Ayuda</a></li>
+			</ul>
+		</div>
+		<div class="redes_sociales">
+			<a href="#"><img src="img/instagram.png" width="25px" height="25px" alt="Instagram"></a>
+			<a href="#"><img src="img/facebook.png" width="25px" height="25px" alt="Facebook"></a>
+			<a href="#"><img src="img/twitter.png" width="30px" height="25px" alt="Twitter"></a>
+		</div>
+	</footer>
+</body>
+</html>

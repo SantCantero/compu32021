@@ -1,0 +1,323 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recolectar</title>
+<link href="estilos.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header id="header_home">
+		<a href="index.html" title="Pomona">
+			<img src="img/marca_02.png" width="241 px" height="74 px" alt="Pomona" id="marca_nav">
+		</a>
+		<nav class="botonera" id="desplegado">
+			<ul>
+				<a href="recolectar_01.html"><li class="section_unfocus">Recolectar</li>
+				</a>
+				<a href="publicar.html"><li class="section_unfocus">Publicar</li>
+				</a>
+				<a href="#popup3"><li class="section_unfocus">Mensajes</li>
+				</a>
+				<li class="barra">
+					<a href="#"><img src="img/lupa-10.png" width="42 px" height="42 px" alt="Búsqueda">
+					</a>
+					<input type="text" name="">
+				</li>
+				<a href="#popup01">
+					<li class="user">Estebangnr</li>
+				</a>
+				<a id="ocultar_nav" href="#">
+					<h5>Cerrar</h5>
+				</a>
+			</ul>	
+		</nav>
+		<a href="#desplegado" class="hamburguesa">
+			<img src="img/hamburguesa.png" width="44px" height="44px" alt="Menú">
+		</a>
+		<article class="barra_02">
+			<input type="text" name="">
+			<a href="#">
+				<img src="img/lupa-10.png" width="42 px" height="42 px" alt="Búsqueda">
+			</a>
+		</article>
+			<div class="categorias" id="categorias_mobile">
+				<input type="button" class="categoria" value="Frutas y Verduras">
+				<input type="button" class="categoria" value="No perecederos">
+				<a href="#menu_filtros_mobile"><img src="img/menu_filtros.png" width="68px" height= "37px" alt="Menú filtros"></a>
+			</div>
+	</header>
+	<main>
+		<section class="publicaciones">
+			<h5>Estos son los alimentos que podés recolectar</h5>
+			<article class="contenedor_01" id="menu_filtros_mobile">
+				<form class="formulario_01">
+					<div class="categorias" id="categorias_desktop">
+						<input type="button" class="categoria" value="Frutas y Verduras">
+						<input type="button" class="categoria" value="No perecederos">
+					</div>
+					<div class="zona">
+						<label for="Zona">Ubicación:</label>
+						<select name="ubicación" id="ubicación">
+							<option value="Agronomía">Agronomía</option>
+							<option value="Almagro">Almagro</option>
+							<option value="Balvanera">Balvanera</option>
+							<option value="Barracas">Barracas</option>
+							<option value="Belgrano">Belgrano</option>
+							<option value="Boedo">Boedo</option>
+							<option value="Caballito">Caballito</option>
+							<option value="Chacarita">Chacarita</option>
+							<option value="Coghlan">Coghlan</option>
+							<option value="Colegiales">Colegiales</option>
+							<option value="Constitución">Constitución</option>
+							<option value="Flores">Flores</option>
+							<option value="La Boca">La Boca</option>
+							<option value="La Paternal">La Paternal</option>
+						</select>
+					</div>
+					<div class="switch-container">
+						<label for="Activar GPS">Activar GPS</label>
+						<input type="checkbox" id="switch">
+						<label for="switch" class="activar"></label>
+					</div>
+					<div class="palabras_clave">
+						<label for="Palabras Clave">Palabras Clave</label>
+						<input type="text" name="Palabras Clave" id="Palabras" maxlength="30" placeholder="Escribe ej.: #Manzana">
+					</div>
+					<div class="switch-container">
+						<label for="Más Recientes">Más Recientes</label>
+						<input type="checkbox" id="switch2">
+						<label for="switch2" class="activar2"></label>
+					</div>
+					<input type="reset" value="Limpiar" class="boton-form">
+					<a href="#" id="cerrar_filtros"><h5>Cerrar</h5></a>
+				</form>
+			</article>
+			<article class="resultados">
+				<article class="caja">
+					<img src="img/resultados_01.png" width="184 px" height="171 px" alt="Resultado_01" class="resultados_mobile">
+					<div>
+						<hgroup>
+							<h3>Limones</h3>
+							<h6>Cantidad: 15</h6>
+						</hgroup>
+						<ul>
+							<li>
+								<img src="img/usuario_2.png" weight="22 px" height="22 px" alt="User">
+								<p>Carolina93</p>
+							</li>
+							<li>
+								<img src="img/localización.png" weight="22 px" height="22 px" alt="Ubicación">
+								<p>1.5 km</p>
+							</li>
+							<li><h6>#fruta #limón</h6></li>
+						</ul>
+					</div>
+					<a id="rotarcanasta" href="recolectar_02.html" title="Recolectar">
+						<img src="img/canasta_02.png" width="52 px" height="52 px" alt="Recolectar" >
+					</a>
+				</article>
+				<article class="caja">
+					<img src="img/resultados_02.png" width="184 px" height="171 px" alt="Resultado_02" class="resultados_mobile">
+					<div>
+						<hgroup>
+							<h3>Tomates cherry</h3>
+							<h6>Cantidad: 1 kg</h6>
+						</hgroup>
+						<ul>
+							<li>
+								<img src="img/usuario_2.png" weight="22 px" height="22 px" alt="User">
+								<p>Rodriii7</p>
+							</li>
+							<li>
+								<img src="img/localización.png" weight="22 px" height="22 px" alt="Ubicación">
+								<p>1.5 km</p>
+							</li>
+							<li><h6>#fruta #tomate</h6></li>
+						</ul>
+					</div>
+					<a id="rotarcanasta1" href="recolectar_02.html" title="Recolectar">
+						<img src="img/canasta_02.png" width="52 px" height="52 px" alt="Recolectar">
+					</a>
+				</article>
+				<article class="caja">
+					<img src="img/resultados_03.png" width="184 px" height="171 px" alt="Resultado_03" class="resultados_mobile">
+					<div>
+						<hgroup>
+						<h3>Manzanas rojas</h3>
+						<h6>Cantidad: 10</h6>
+						</hgroup>
+						<ul>
+							<li>
+								<img src="img/usuario_2.png" weight="22 px" height="22 px" alt="User">
+								<p>Estebangnr</p>
+							</li>
+							<li>
+								<img src="img/localización.png" weight="22 px" height="22 px" alt="Ubicación">
+								<p>1.5 km</p>
+							</li>
+							<li><h6>#fruta #manzana</h6></li>
+						</ul>
+					</div>
+					<a id="rotarcanasta2" href="recolectar_02.html" title="Recolectar"><img src="img/canasta_02.png" width="52 px" height="52 px" alt="Recolectar"></a>
+				</article>
+				<article class="caja">
+					<img src="img/resultados_04.png" width="184 px" height="171 px" alt="Resultado_04" class="resultados_mobile">
+					<div>
+						<hgroup>
+						<h3>Paltas</h3>
+						<h6>Cantidad: 8</h6>
+						</hgroup>
+						<ul>
+							<li>
+								<img src="img/usuario_2.png" weight="22 px" height="22 px" alt="User">
+								<p>GustavoGp</p>
+							</li>
+							<li>
+								<img src="img/localización.png" weight="22 px" height="22 px" alt="Ubicación">
+								<p>1.5 km</p>
+							</li>
+							<li><h6>#fruta #palta</h6></li>
+						</ul>
+					</div>
+					<a id="rotarcanasta3" href="recolectar_02.html" title="Recolectar"><img src="img/canasta_02.png" width="52 px" height="52 px" alt="Recolectar"></a>
+				</article>
+				<article class="caja">
+					<img src="img/resultados_05.png" width="184 px" height="171 px" alt="Resultado_05" class="resultados_mobile">
+					<div>
+						<hgroup>
+						<h3>Perejil</h3>
+						<h6>Cantidad: 1</h6>
+						</hgroup>
+						<ul>
+							<li>
+								<img src="img/usuario_2.png" weight="22 px" height="22 px" alt="User">
+								<p>Inésniki</p>
+							</li>
+							<li>
+								<img src="img/localización.png" weight="22 px" height="22 px" alt="Ubicación">
+								<p>1.5 km</p>
+							</li>
+							<li><h6>#verdura #perejil</h6></li>
+						</ul>
+					</div>
+					<a id="rotarcanasta4" href="recolectar_02.html" title="Recolectar"><img src="img/canasta_02.png" width="52 px" height="52 px" alt="Recolectar"></a>
+				</article>
+				<article class="caja">
+					<img src="img/resultados_06.png" width="184 px" height="171 px" alt="Resultado_06" class="resultados_mobile">
+					<div>
+						<hgroup>
+						<h3>Rabanitos</h3>
+						<h6>Cantidad: 1 kg</h6>
+						</hgroup>
+						<ul>
+							<li>
+								<img src="img/usuario_2.png" weight="22 px" height="22 px" alt="User">
+								<p>Lucymora</p>
+							</li>
+							<li>
+								<img src="img/localización.png" weight="22 px" height="22 px" alt="Ubicación">
+								<p>1.5 km</p>
+							</li>
+							<li><h6>#verdura #rabanito</h6></li>
+						</ul>
+					</div>
+					<a id="rotarcanasta5" href="recolectar_02.html" title="Recolectar"><img src="img/canasta_02.png" width="52 px" height="52 px" alt="Recolectar"></a>
+				</article>
+			</article>
+		</section>
+		<section class="popup" id="popup01">
+			<a id="cerrar" href="#"><img src="img/cerrarchat.png" alt="Cerrar chat">
+			</a>
+			<article class="popup_01">
+				<div class="activardiv">
+					<input type="file" id="activarfiles">
+					<label for="activarfiles" class="activarfiles2">
+						<img src="img/perfileditpng_1.png" alt="">
+					</label>
+				</div>
+				<h4>Estebangnr</h4>
+				<h5>Calificaciones de otros usuarios</h5>
+				<img src="img/estrellas.png" height="28.18px" alt="estrellas">
+				<div class="actividad">
+					<h3>Actividad</h3>
+					<ul>
+						<li>
+							<h6>Donado</h6>
+							<p>4</p>
+						</li>
+						<li>
+							<h6>Recogido</h6>
+							<p>7</p>
+						</li>
+					</ul>
+				</div>
+				<div class="insignias">
+					<h3>Insignias</h3>
+					<img src="img/insignias.png" height="41.77px" alt="insignia">
+				</div>
+				<div class="boton_principal">
+					<a href="index.html" title="Cerrar Sesión" >
+						<h5>Cerrar Sesión</h5>
+					</a>
+				</div>
+			</article>
+		</section>
+		<section class="cajademensajes">
+			<article class="aparecer3" id="popup3">
+				<a id="cerrar1" href="#">
+					<img src="img/cerrarchat.png" alt="cerrar mensaje">
+				</a>
+				<div class="aparecer3contenedor">
+					<div class="box_mensajes">
+						<img src="img/perfil2.png" alt="perfil1" height="55px" width="55px">
+						<ul>
+							<li><h4>Karina</h4><img src="img/puntomensaje.png" height="18px" width="18px" alt="puntomensaje"></li>
+							<li>Mensaje de entrada</li>
+						</ul>
+					</div>
+					<div class="box_mensajes">
+						<img src="img/perfil1.png" height="55px" width="55px" alt="perfil2">
+						<ul>
+							<li><h4>Caro</h4><img src="img/puntomensaje.png" height="18px" width="18px" alt="puntomensaje"></li>
+							<li>Hola, los tomates...</li>
+						</ul>
+					</div>
+					<div class="box_mensajes">
+						<img src="img/perfil3.png" height="55px" width="55px" alt="perfil3">
+						<ul>
+							<li><h4>Marina</h4><img src="img/puntomensaje.png" height="18px" width="18px" alt="puntomensaje"></li>
+							<li>Buenas, las verduras...</li>
+						</ul>
+					</div>
+				</div>
+			</article>
+		</section>
+		<div class="botones">
+			<ul>
+				<li class="boton_01">1</li>
+				<li class="boton_02">2</li>
+				<li class="boton_03">3</li>
+			</ul>
+		</div>
+	</main>
+	<footer>
+		<img src="img/marca_footer.png" width="214 px" height="66 px" alt="Pomona">
+		<div class="legales">
+			<ul>
+				<li class="legales_01"><a href="#">©2021 Pomona</a></li>
+				<li><a href="#">Términos y condiciones</a></li>
+				<li><a href="#">Política de privacidad</a></li>
+				<li><a href="#">Ayuda</a></li>
+			</ul>
+		</div>
+		<div class="redes_sociales">
+			<a href="#"><img src="img/instagram.png" width="25px" height="25px" alt="Instagram"></a>
+			<a href="#"><img src="img/facebook.png" width="25px" height="25px" alt="Facebook"></a>
+			<a href="#"><img src="img/twitter.png" width="30px" height="25px" alt="Twitter"></a>
+		</div>
+	</footer>
+</body>
+</html>
